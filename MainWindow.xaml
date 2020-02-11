@@ -1,0 +1,54 @@
+﻿<Window x:Class="Jameson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jameson"
+        mc:Ignorable="d"
+        Title="Jameson" Height="650" Width="450">
+    <Grid>
+        <StackPanel Margin="0,0,0,50">
+            
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Name" Height="22" Width="100"/>
+                <TextBox x:Name="strName" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Address" Height="22" Width="100"/>
+                <TextBox x:Name="strAddress" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Type" Height="22" Width="100"/>
+                <TextBox x:Name="strType" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Flors" Height="22" Width="100"/>
+                <TextBox x:Name="strFlors" Width="200"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Login" Height="22" Width="100"/>
+                <TextBox x:Name="strLogin" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Group" Height="22" Width="100"/>
+                <TextBox x:Name="strGroup" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Phones" Height="22" Width="100"/>
+                <TextBox x:Name="strPhones" Width="200"></TextBox>
+            </StackPanel>
+            <Button Margin="50, 10, 50, 10" Content="Сохранить" Click="Button_Click" Width="100"/>
+            <Button Margin="50, 10, 50, 10" Content="Загрузить" Click="Button_Load" Width="100"/>
+            
+            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="objNumber" Height="22" Width="100"/>
+                <TextBox x:Name="strObjNumber" Width="30"></TextBox>
+            </StackPanel>
+            
+            
+            
+        </StackPanel>
+    </Grid>
+    
+</Window>
