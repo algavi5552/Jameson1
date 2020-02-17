@@ -5,50 +5,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jameson"
         mc:Ignorable="d"
-        Title="Jameson" Height="650" Width="450">
+        Title="Jameson" Height="600" Width="380">
     <Grid>
-        <StackPanel Margin="0,0,0,50">
-            
-            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+        <Border BorderThickness="5" BorderBrush="Navy" CornerRadius="3"></Border>
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <StackPanel  Orientation="Horizontal">
                 <TextBlock HorizontalAlignment="Center" Text="Name" Height="22" Width="100"/>
-                <TextBox x:Name="strName" Width="200"></TextBox>
+                <Border BorderThickness="1" BorderBrush="Navy">
+                    <TextBox x:Name="strName" Width="200"></TextBox>
+                </Border>
             </StackPanel>
-            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+            
+            <StackPanel Orientation="Horizontal">
                 <TextBlock HorizontalAlignment="Center" Text="Address" Height="22" Width="100"/>
+                <Border BorderThickness="1" BorderBrush="Navy">
                 <TextBox x:Name="strAddress" Width="200"></TextBox>
-            </StackPanel>
-            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
-                <TextBlock HorizontalAlignment="Center" Text="Type" Height="22" Width="100"/>
-                <TextBox x:Name="strType" Width="200"></TextBox>
-            </StackPanel>
-            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
-                <TextBlock HorizontalAlignment="Center" Text="Flors" Height="22" Width="100"/>
-                <TextBox x:Name="strFlors" Width="200"></TextBox>
+                </Border>
             </StackPanel>
 
-            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Type" Height="22" Width="100"/>
+                <Border BorderThickness="1" BorderBrush="Navy">
+                <TextBox x:Name="strType" Width="200"></TextBox>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock HorizontalAlignment="Center" Text="Flors" Height="22" Width="100"/>
+                <Border BorderThickness="1" BorderBrush="Navy">
+                <TextBox x:Name="strFlors" Width="200"></TextBox>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
                 <TextBlock HorizontalAlignment="Center" Text="Login" Height="22" Width="100"/>
+                <Border BorderThickness="1" BorderBrush="Navy">
                 <TextBox x:Name="strLogin" Width="200"></TextBox>
+                </Border>
             </StackPanel>
-            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+
+            <StackPanel Orientation="Horizontal">
                 <TextBlock HorizontalAlignment="Center" Text="Group" Height="22" Width="100"/>
+                <Border BorderThickness="1" BorderBrush="Navy">
                 <TextBox x:Name="strGroup" Width="200"></TextBox>
+                </Border>
             </StackPanel>
-            <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
+
+            <StackPanel Orientation="Horizontal">
                 <TextBlock HorizontalAlignment="Center" Text="Phones" Height="22" Width="100"/>
+                <Border BorderThickness="1" BorderBrush="Navy">
                 <TextBox x:Name="strPhones" Width="200"></TextBox>
+                </Border>
             </StackPanel>
-            <Button Margin="50, 10, 50, 10" Content="Сохранить" Click="Button_Click" Width="100"/>
-            <Button Margin="50, 10, 50, 10" Content="Загрузить" Click="Button_Load" Width="100"/>
-            
+
+            <StackPanel Margin="0, 20, 0, 0" Orientation="Horizontal">
+                <Button Margin="30, 10, 50, 10" Content="Add" Click="Button_Add" Width="100" RenderTransformOrigin="-1.024,0.503"/>
+                <Button Margin="0, 10, 0, 10" Content="Save" Click="Button_Click" Width="100"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="30, 10, 50, 10" Content="Delete" Click="Button_Delete" Width="100"/>
+                <Button Margin="0, 10, 10, 10" Content="Load" Click="Button_Load" Width="100"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="30, 10, 10, 10" Content="Dec" Click="Button_Dec" Width="100"/>
+                <Border BorderThickness="1" BorderBrush="Navy" Height="20" >
+                <TextBox x:Name="strObjNumber" Width="30" Height="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                </Border>
+                <Button Margin="10, 10, 10, 10" Content="Inc" Click="Button_Inc" Width="100"/>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" Text="Object number" Height="22" Width="100"/>
+
             <StackPanel Margin="50, 20, 0, 0" Orientation="Horizontal">
-                <TextBlock HorizontalAlignment="Center" Text="objNumber" Height="22" Width="100"/>
-                <TextBox x:Name="strObjNumber" Width="30"></TextBox>
+                <Border BorderThickness="1" BorderBrush="Navy">
+                  <TextBlock Text="source file:" Height="22" Width="100" TextAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Navy">
+                    <TextBox x:Name="strSource" Width="100" TextAlignment="Center" Text="input1.json" ></TextBox>
+                </Border>
+
             </StackPanel>
-            
-            
-            
-        </StackPanel>
+
+            <StackPanel Margin="50, 0, 0, 0" Orientation="Horizontal">
+                <Border BorderThickness="1" BorderBrush="Navy">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="destination file:" Height="22" Width="100" TextAlignment="Center" />
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Navy">
+                    <TextBox x:Name="strDestination" Width="100" TextAlignment="Center" Text="output.json" ></TextBox>
+                </Border>
+            </StackPanel>
+
+            </StackPanel>
+
+        
     </Grid>
     
+
+
 </Window>

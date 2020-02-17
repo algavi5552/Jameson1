@@ -13,7 +13,7 @@ namespace Jameson
         public string login { get; set; }
         public int group { get; set; }
         public List<object> phones { get; set; }
-        //public List<string> phones { get; set; }
+        
     }
 
     public class D
